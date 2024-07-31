@@ -4,6 +4,7 @@ import { ref } from "vue";
 
 const search_query = ref("");
 const animeList = ref([]);
+document.title = "Anime Search";
 
 const handleSearch = async () => {
   animeList.value = await fetch(
